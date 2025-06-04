@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Analysis - n8n Product Teardown</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0Z" fill="#FF6B4A"/>
+                        <path d="M65 35V65H55V50L35 65V35H45V50L65 35Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">n8n</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-overview.html">Product Overview</a></li>
+                        <li><a href="market-analysis.html">Market Analysis</a></li>
+                        <li><a href="user-insights.html">User Insights</a></li>
+                        <li><a href="strategic-recommendations.html">Strategic Recommendations</a></li>
+                        <li><a href="gtm-strategy.html">Go-to-Market</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Market Analysis</h1>
+            
+            <section id="competitive-landscape">
+                <h2>Competitive Landscape</h2>
+                
+                <p class="text-xl mb-4">The workflow automation/iPaaS market is crowded and growing, with several key competitors:</p>
+                
+                <div class="grid">
+                    <div class="card">
+                        <div class="flex mb-2">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Zapier</h3>
+                        </div>
+                        <p class="text-lg">Incumbent leader with 5,000-6,000+ integrations</p>
+                        <p class="text-lg">300k+ paying customers, ~$300-400M revenue</p>
+                        <p class="text-lg">Known for ease of use and reliability</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="flex mb-2">
+                            <div class="feature-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Make (formerly Integromat)</h3>
+                        </div>
+                        <p class="text-lg">~1,500 app integrations</p>
+                        <p class="text-lg">Targets more tech-savvy users</p>
+                        <p class="text-lg">Advanced features like iterators and routers</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="flex mb-2">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Pipedream</h3>
+                        </div>
+                        <p class="text-lg">~2,000 pre-built integrations</p>
+                        <p class="text-lg">Developer-centric with code in workflows</p>
+                        <p class="text-lg">~900k+ users, generous free tier</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="flex mb-2">
+                            <div class="feature-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Workato</h3>
+                        </div>
+                        <p class="text-lg">~1,200 connectors</p>
+                        <p class="text-lg">Enterprise-focused with security emphasis</p>
+                        <p class="text-lg">Higher price point, deeper enterprise features</p>
+                    </div>
+                </div>
+                
+                <div class="card card-highlight mt-4">
+                    <p class="text-xl"><span class="n8n-orange font-semibold">n8n's position:</span> Unique as an open-source alternative with more control and flexibility than SaaS-only tools, appealing to technical users who find closed-source tools too restrictive.</p>
+                </div>
+            </section>
+            
+            <section id="market-size-share" class="mt-5">
+                <h2>Market Size, Growth & Share</h2>
+                
+                <div class="chart-container">
+                    <canvas id="marketChart"></canvas>
+                </div>
+                
+                <div class="grid">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Market Size & Growth</h3>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li class="text-lg">Global workflow automation market: ~$23.8B in 2025</li>
+                            <li class="text-lg">Projected to reach $37B+ by 2030</li>
+                            <li class="text-lg">iPaaS market: $3.7B in 2021, forecast to reach $13.9B by 2026 (CAGR ~30%)</li>
+                            <li class="text-lg">Growth driven by surge in SaaS adoption and need to connect disparate systems</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">n8n's Market Position</h3>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li class="text-lg">Newer entrant (founded 2019) with open-source model</li>
+                            <li class="text-lg">200,000+ users and 3,000+ enterprises</li>
+                            <li class="text-lg">Substantial community for a young platform</li>
+                            <li class="text-lg">7× community growth in 12 months</li>
+                            <li class="text-lg">Still a fraction of Zapier's multi-million user footprint</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="monetization" class="mt-5">
+                <h2>Monetization Strategy</h2>
+                
+                <div class="grid">
+                    <div class="card card-highlight">
+                        <h3 class="text-xl font-semibold mb-2">n8n's Model</h3>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li class="text-lg">Freemium open-core model</li>
+                            <li class="text-lg">Core software is free and source-available</li>
+                            <li class="text-lg">Revenue from Cloud hosting plans and enterprise offerings</li>
+                            <li class="text-lg">Charges based on workflow executions per month</li>
+                            <li class="text-lg">Starting ~€20/month for 2,500 executions</li>
+                            <li class="text-lg">Self-hosting option at near-zero marginal cost</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Competitor Models</h3>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li class="text-lg">Zapier: Tiered subscriptions with pay-per-action pricing</li>
+                            <li class="text-lg">Make: Subscription plans based on operation counts</li>
+                            <li class="text-lg">Pipedream: Free tier with usage fees for expanded workflows</li>
+                            <li class="text-lg">Workato: Enterprise SaaS subscriptions with annual contracts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h3 class="text-xl font-semibold mb-2">Cost Comparison Example</h3>
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Service</th>
+                                <th>Cost</th>
+                            </tr>
+                            <tr>
+                                <td>100,000 actions on Zapier</td>
+                                <td>~$734/month</td>
+                            </tr>
+                            <tr>
+                                <td>Equivalent on n8n Cloud</td>
+                                <td>~$80-$100/month</td>
+                            </tr>
+                            <tr>
+                                <td>Self-hosted n8n</td>
+                                <td>Server costs only</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="card card-highlight mt-4">
+                    <p class="text-xl"><span class="n8n-orange font-semibold">Key differentiator:</span> n8n charges per workflow execution, not per step/action, making it significantly more cost-effective at scale.</p>
+                </div>
+            </section>
+            
+            <div class="slide-nav">
+                <a href="product-overview.html" class="prev"><i class="fas fa-arrow-left"></i> Product Overview</a>
+                <a href="user-insights.html" class="next">User Insights <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 n8n Product Teardown</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

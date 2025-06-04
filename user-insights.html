@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Insights - n8n Product Teardown</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0Z" fill="#FF6B4A"/>
+                        <path d="M65 35V65H55V50L35 65V35H45V50L65 35Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">n8n</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-overview.html">Product Overview</a></li>
+                        <li><a href="market-analysis.html">Market Analysis</a></li>
+                        <li><a href="user-insights.html">User Insights</a></li>
+                        <li><a href="strategic-recommendations.html">Strategic Recommendations</a></li>
+                        <li><a href="gtm-strategy.html">Go-to-Market</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">User Insights</h1>
+            
+            <section id="user-segments">
+                <h2>Core User Segments</h2>
+                
+                <div class="grid">
+                    <div class="persona-card">
+                        <div class="flex mb-3">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Developer/DevOps Engineers</h3>
+                                <p class="text-lg italic">"DevOps Dan"</p>
+                            </div>
+                        </div>
+                        <p class="text-lg mb-2">Engineers who appreciate n8n's ability to incorporate code and run on-premises</p>
+                        <p class="text-lg mb-2">Value control over the environment and often contribute custom nodes</p>
+                        <p class="text-lg">Use case: Connecting GitHub, CI/CD, and notification systems with custom JavaScript logic</p>
+                    </div>
+                    
+                    <div class="persona-card">
+                        <div class="flex mb-3">
+                            <div class="feature-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">IT & Automation Specialists</h3>
+                                <p class="text-lg italic">"SysAdmin Sarah"</p>
+                            </div>
+                        </div>
+                        <p class="text-lg mb-2">Tech-savvy IT admins comfortable with low-code tools</p>
+                        <p class="text-lg mb-2">Need to automate business processes while keeping data on company infrastructure</p>
+                        <p class="text-lg">Use case: Automating employee onboarding with HR systems and directories</p>
+                    </div>
+                    
+                    <div class="persona-card">
+                        <div class="flex mb-3">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Data Analysts / Growth Hackers</h3>
+                                <p class="text-lg italic">"Analyst Alex"</p>
+                            </div>
+                        </div>
+                        <p class="text-lg mb-2">Users who straddle business and tech roles</p>
+                        <p class="text-lg mb-2">Choose n8n for tasks that might hit Zapier's limits</p>
+                        <p class="text-lg">Use case: Pulling data from Google Analytics and SQL databases, running Python for reports</p>
+                    </div>
+                    
+                    <div class="persona-card">
+                        <div class="flex mb-3">
+                            <div class="feature-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Open-Source Enthusiasts / Hobbyists</h3>
+                                <p class="text-lg italic">"Tinkering Thomas"</p>
+                            </div>
+                        </div>
+                        <p class="text-lg mb-2">Individuals who install n8n for personal projects</p>
+                        <p class="text-lg mb-2">Value free access and ability to experiment</p>
+                        <p class="text-lg">Use case: Self-hosting on a Raspberry Pi to automate smart home events and API experiments</p>
+                    </div>
+                </div>
+                
+                <p class="text-lg mt-4 italic">Note: n8n "technical teams" often collaborate – e.g., a developer might set it up, and a less technical team member uses the pre-made workflows.</p>
+            </section>
+            
+            <section id="user-journey" class="mt-5">
+                <h2>User Journey & Flow</h2>
+                
+                <div class="journey-flow">
+                    <div class="journey-step">
+                        <div class="flex mb-2">
+                            <div class="journey-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Discovery</h3>
+                        </div>
+                        <p class="text-lg ml-14">Users typically find n8n via:</p>
+                        <ul class="list-disc ml-20 text-lg">
+                            <li>Tech communities (GitHub, Hacker News, Reddit)</li>
+                            <li>Word of mouth from colleagues</li>
+                            <li>Searching for "open-source alternative to Zapier/Make"</li>
+                            <li>GitHub trending (103k+ stars, top 150 projects)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="flex mb-2">
+                            <div class="journey-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Onboarding</h3>
+                        </div>
+                        <p class="text-lg ml-14">Experience varies by user skill:</p>
+                        <ul class="list-disc ml-20 text-lg">
+                            <li>Newbies: Start with n8n Cloud's free trial, browse templates</li>
+                            <li>Self-hosters: Install n8n (often via Docker), explore web UI</li>
+                            <li>Initial challenge: Configuring credentials, learning triggers vs. actions</li>
+                            <li>Resources: Documentation, beginners course, community forum</li>
+                            <li>First success: Simple use-case like "Form submission → Email + Google Sheet"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <div class="flex mb-2">
+                            <div class="journey-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Main Use Cases & Engagement</h3>
+                        </div>
+                        <div class="grid ml-14">
+                            <div>
+                                <p class="text-lg font-semibold">Common Use Cases:</p>
+                                <ul class="list-disc ml-6 text-lg">
+                                    <li>Data synchronization between apps/databases</li>
+                                    <li>Notifications & alerts</li>
+                                    <li>Reporting and ETL tasks</li>
+                                    <li>AI integrations</li>
+                                    <li>Building mini "bots" or microservices</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="text-lg font-semibold">Engagement Pattern:</p>
+                                <ul class="list-disc ml-6 text-lg">
+                                    <li>Iterating on workflows with visual editor</li>
+                                    <li>Testing and debugging executions</li>
+                                    <li>Creating sub-workflows for reusable logic</li>
+                                    <li>Engaging with community forum</li>
+                                    <li>Discovering new possibilities from community</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-lg mt-4 italic">Once n8n is embedded in critical automations, users become very sticky – it becomes part of their infrastructure.</p>
+            </section>
+            
+            <section id="unique-strengths" class="mt-5">
+                <h2>Unique Strengths (What Users Love)</h2>
+                
+                <div class="grid">
+                    <div class="card card-success">
+                        <div class="flex mb-2">
+                            <i class="fas fa-unlock n8n-green text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Freedom & Control</h3>
+                        </div>
+                        <p class="text-lg">Users love not being locked into vendor limits or pricing</p>
+                        <p class="text-lg">Self-hosting option for unlimited workflows</p>
+                        <p class="text-lg">Data privacy by keeping information on own servers</p>
+                    </div>
+                    
+                    <div class="card card-success">
+                        <div class="flex mb-2">
+                            <i class="fas fa-puzzle-piece n8n-green text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Extensibility</h3>
+                        </div>
+                        <p class="text-lg">"Anything is possible with n8n... you just need some technical knowledge + imagination"</p>
+                        <p class="text-lg">Custom nodes or code for any missing integration</p>
+                    </div>
+                    
+                    <div class="card card-success">
+                        <div class="flex mb-2">
+                            <i class="fas fa-sitemap n8n-green text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Flexibility</h3>
+                        </div>
+                        <p class="text-lg">Complex logic (branches, loops, conditional triggers)</p>
+                        <p class="text-lg">Outgrows what basic no-code tools can do</p>
+                    </div>
+                    
+                    <div class="card card-success">
+                        <div class="flex mb-2">
+                            <i class="fas fa-users n8n-green text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Community</h3>
+                        </div>
+                        <p class="text-lg">Vibrant community contributing nodes (1,100+ community-built integrations)</p>
+                        <p class="text-lg">Rapidly expanding ecosystem with new integrations weekly</p>
+                    </div>
+                    
+                    <div class="card card-success">
+                        <div class="flex mb-2">
+                            <i class="fas fa-coins n8n-green text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Cost-effectiveness</h3>
+                        </div>
+                        <p class="text-lg">Core tool is free with "fair-code" ethos</p>
+                        <p class="text-lg">Simpler pricing: pay per workflow, not per step</p>
+                    </div>
+                    
+                    <div class="card card-success">
+                        <div class="flex mb-2">
+                            <i class="fas fa-code n8n-green text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Developer Respect</h3>
+                        </div>
+                        <p class="text-lg">Tool that "respects developers" by not oversimplifying</p>
+                        <p class="text-lg">Balance of visual interface and code precision</p>
+                    </div>
+                </div>
+                
+                <div class="quote text-center mt-4">
+                    <p class="text-xl">"The holy grail of automation... what would've taken me 3 days to code from scratch was done in 2 hours [in n8n]"</p>
+                    <p class="text-lg mt-2">- Reddit user</p>
+                </div>
+            </section>
+            
+            <section id="weaknesses" class="mt-5">
+                <h2>Product Weaknesses</h2>
+                
+                <div class="grid">
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-graduation-cap n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Steeper Learning Curve</h3>
+                        </div>
+                        <p class="text-lg">Less intuitive for beginners compared to plug-and-play competitors</p>
+                        <p class="text-lg">Interface "is not as beginner-friendly" and can be overwhelming</p>
+                        <p class="text-lg">Users need to grasp nodes, data references, JSON structures</p>
+                        <div class="mt-2 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-orange-500 h-2 rounded-full w-3/4"></div>
+                        </div>
+                        <p class="text-sm text-right">High Impact</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-paint-brush n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">User Interface & Polish</h3>
+                        </div>
+                        <p class="text-lg">UI less polished than mature rivals like Zapier</p>
+                        <p class="text-lg">Tricky debugging of complex workflows</p>
+                        <p class="text-lg">Some collaboration features only in paid plans</p>
+                        <div class="mt-2 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-orange-500 h-2 rounded-full w-1/2"></div>
+                        </div>
+                        <p class="text-sm text-right">Medium Impact</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-plug n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Limited Out-of-the-Box Integrations</h3>
+                        </div>
+                        <p class="text-lg">500+ native nodes vs. Zapier's 5,000+ integrations</p>
+                        <p class="text-lg">Community nodes help but require extra installation steps</p>
+                        <p class="text-lg">Not yet a "one-stop shop" for obscure app integrations</p>
+                        <div class="mt-2 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-orange-500 h-2 rounded-full w-1/2"></div>
+                        </div>
+                        <p class="text-sm text-right">Medium Impact</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-server n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Hosting & Maintenance Burden</h3>
+                        </div>
+                        <p class="text-lg">Self-hosted users take on maintenance responsibility</p>
+                        <p class="text-lg">Requires server/Docker setup and management</p>
+                        <p class="text-lg">If self-hosted instance goes down, automations stop</p>
+                        <div class="mt-2 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-orange-500 h-2 rounded-full w-1/2"></div>
+                        </div>
+                        <p class="text-sm text-right">Medium Impact</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-tachometer-alt n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Performance at Scale</h3>
+                        </div>
+                        <p class="text-lg">Can be memory-intensive for huge workflows</p>
+                        <p class="text-lg">Not tested at same scale as enterprise solutions</p>
+                        <p class="text-lg">Enterprise users may worry about support and SLAs</p>
+                        <div class="mt-2 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-orange-500 h-2 rounded-full w-1/4"></div>
+                        </div>
+                        <p class="text-sm text-right">Low Impact</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-bullhorn n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Perception and Awareness</h3>
+                        </div>
+                        <p class="text-lg">Less brand recognition outside tech circles</p>
+                        <p class="text-lg">Non-technical managers may not have heard of n8n</p>
+                        <p class="text-lg">May be overlooked in favor of incumbent solutions</p>
+                        <div class="mt-2 bg-gray-200 h-2 rounded-full">
+                            <div class="bg-orange-500 h-2 rounded-full w-1/2"></div>
+                        </div>
+                        <p class="text-sm text-right">Medium Impact</p>
+                    </div>
+                </div>
+                
+                <p class="text-lg mt-4 italic">n8n's weaknesses mostly stem from its youth and focus on technical users: it trades some ease-of-use for greater flexibility.</p>
+            </section>
+            
+            <div class="slide-nav">
+                <a href="market-analysis.html" class="prev"><i class="fas fa-arrow-left"></i> Market Analysis</a>
+                <a href="strategic-recommendations.html" class="next">Strategic Recommendations <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 n8n Product Teardown</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

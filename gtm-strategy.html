@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-to-Market Strategy - n8n Product Teardown</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0Z" fill="#FF6B4A"/>
+                        <path d="M65 35V65H55V50L35 65V35H45V50L65 35Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">n8n</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-overview.html">Product Overview</a></li>
+                        <li><a href="market-analysis.html">Market Analysis</a></li>
+                        <li><a href="user-insights.html">User Insights</a></li>
+                        <li><a href="strategic-recommendations.html">Strategic Recommendations</a></li>
+                        <li><a href="gtm-strategy.html">Go-to-Market</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Go-to-Market Strategy</h1>
+            
+            <section id="gtm-positioning">
+                <h2>Positioning & Differentiation</h2>
+                
+                <div class="card card-highlight mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Core Positioning Statement</h3>
+                    <p class="text-xl italic n8n-orange">"n8n – Automate on your terms: your code, your data, your infrastructure."</p>
+                    <p class="text-lg mt-4">Position as the "automation platform for builders," emphasizing:</p>
+                    <ul class="list-disc ml-6 text-lg mt-2">
+                        <li>Open-source foundation</li>
+                        <li>Flexibility and control</li>
+                        <li>Cost-efficiency at scale</li>
+                        <li>Best of both worlds: ease-of-use and power of code</li>
+                    </ul>
+                </div>
+                
+                <h3 class="text-2xl font-semibold mb-4">Differentiation Against Key Competitors</h3>
+                
+                <div class="grid">
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 n8n-orange">vs. Zapier</h4>
+                        <p class="text-lg">"n8n gives you 10× the power at a fraction of the cost"</p>
+                        <p class="text-lg mt-2">Highlight case studies of users who moved off Zapier after hitting its limits</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 n8n-orange">vs. Make</h4>
+                        <p class="text-lg">"n8n = Make on steroids + open source"</p>
+                        <p class="text-lg mt-2">Emphasize self-hosting (Make is closed-source cloud only) and infinite extensibility</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 n8n-orange">vs. Pipedream</h4>
+                        <p class="text-lg">"Visual plus Code: best of both worlds"</p>
+                        <p class="text-lg mt-2">Emphasize full UI, code nodes, and no vendor lock-in (Pipedream workflows run only on their cloud)</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h4 class="text-xl font-semibold mb-2 n8n-orange">vs. Power Automate</h4>
+                        <p class="text-lg">"Platform-agnostic and more agile"</p>
+                        <p class="text-lg mt-2">Highlight fair-code model (enterprises prefer open tech they can inspect)</p>
+                    </div>
+                </div>
+                
+                <p class="text-xl mt-8">Position n8n not just as another automation tool, but as the platform of choice for the next generation of automation-savvy makers.</p>
+            </section>
+            
+            <section id="gtm-channels" class="mt-5">
+                <h2>Target Segments & Channels</h2>
+                
+                <div class="grid">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Primary Target Segments</h3>
+                        <div class="card mb-3">
+                            <h4 class="text-xl font-semibold mb-2">Developer Communities</h4>
+                            <p class="text-lg">Early adopters who will champion the product</p>
+                        </div>
+                        <div class="card mb-3">
+                            <h4 class="text-xl font-semibold mb-2">Tech-savvy Teams</h4>
+                            <p class="text-lg">IT, DevOps, and automation specialists</p>
+                        </div>
+                        <div class="card mb-3">
+                            <h4 class="text-xl font-semibold mb-2">Mid-market Tech Companies</h4>
+                            <p class="text-lg">Organizations with technical staff but cost sensitivity</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Key Marketing Channels</h3>
+                        <ul class="space-y-3 text-lg">
+                            <li><i class="fab fa-github n8n-orange mr-3"></i>GitHub (already 103k+ stars)</li>
+                            <li><i class="fab fa-reddit n8n-orange mr-3"></i>Reddit (r/Automation, r/DevOps)</li>
+                            <li><i class="fas fa-comment-alt n8n-orange mr-3"></i>Hacker News</li>
+                            <li><i class="fab fa-stack-overflow n8n-orange mr-3"></i>Stack Overflow (sponsoring tags)</li>
+                            <li><i class="fas fa-cloud n8n-orange mr-3"></i>Cloud provider marketplaces</li>
+                            <li><i class="fab fa-youtube n8n-orange mr-3"></i>YouTube tutorials</li>
+                            <li><i class="fas fa-search n8n-orange mr-3"></i>SEO: "Zapier alternative", "workflow automation open source", "AI automation platform"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card card-highlight mt-4">
+                    <h3 class="text-2xl font-semibold mb-4">Go-to-Market Strategy</h3>
+                    <p class="text-lg mb-4">Leverage a <span class="n8n-orange font-semibold">bottom-up adoption strategy</span>:</p>
+                    <ol class="list-decimal ml-6 space-y-2 text-lg">
+                        <li>Encourage developers to try n8n free (self-hosted)</li>
+                        <li>Provide generous free tier on n8n cloud to reduce friction</li>
+                        <li>Focus content on AI automation to ride current trends</li>
+                        <li>Create content like "Building an AI workflow in 5 minutes with n8n"</li>
+                        <li>Land & expand into organizations as usage grows</li>
+                        <li>Target tech companies where dev teams have already adopted n8n</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="gtm-marketing-partnerships" class="mt-5">
+                <h2>Marketing, Content, DevRel & Partnerships</h2>
+                
+                <div class="grid">
+                    <div class="card card-highlight">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-video n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Modern Marketing & Content</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Short-form and visual content focus</li>
+                            <li>"Workflow Wednesdays" bite-sized tutorials</li>
+                            <li>Success stories in high-value verticals</li>
+                            <li>Highlight how companies saved time/money</li>
+                            <li>Messaging: "No more per-step fees", "self-host in under 5 minutes"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-code n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Developer Relations</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Expand "Expert partners" program</li>
+                            <li>Create VS Code plugin for workflow version control</li>
+                            <li>CLI for developers to manage workflows</li>
+                            <li>Developer-focused events and hackathons</li>
+                            <li>Open-source business movement alignment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-handshake n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Strategic Partnerships</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Cloud provider alliances (AWS Quick Start)</li>
+                            <li>One-click deployable on Vercel/Netlify</li>
+                            <li>Integration partnerships with popular dev tools</li>
+                            <li>Co-marketing with complementary SaaS tools</li>
+                            <li>Technology education platforms for tutorials</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-rocket n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Launch Activities</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Product Hunt launch for tech audience attention</li>
+                            <li>Highlight AI integration capabilities (timely)</li>
+                            <li>Position as a movement in automation (open, fair, collaborative)</li>
+                            <li>Feature big logos (Microsoft, Cisco) for credibility</li>
+                            <li>Create "n8n vs. X" comparison content</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                    <p class="text-xl"><span class="n8n-orange font-semibold">Key differentiator:</span> Storytelling that positions n8n not just as another SaaS tool, but as a movement in automation that gives power back to builders.</p>
+                </div>
+            </section>
+            
+            <section id="gtm-community-sales-pricing" class="mt-5">
+                <h2>Community, Sales, Pricing & Competitive Positioning</h2>
+                
+                <div class="grid">
+                    <div class="card">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-users n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Community-Driven GTM</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Encourage users to share their workflows</li>
+                            <li>Run contests for best workflow solutions</li>
+                            <li>Showcase "Workflow of the Month" for visibility</li>
+                            <li>Feature user success stories prominently</li>
+                            <li>Leverage community as marketing amplifiers</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-chart-line n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Sales Model</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Product-led growth with low friction</li>
+                            <li>Free offering (self-host or cloud trial)</li>
+                            <li>Gentle nudges to upgrade for collaboration</li>
+                            <li>Target tech companies with existing adoption</li>
+                            <li>Classic bottom-up strategy (like Slack/Datadog)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-tag n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Pricing Strategy</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Clear comparison vs. competitors</li>
+                            <li>Highlight "most cost-effective option"</li>
+                            <li>Emphasize "pay for workflow, not each step"</li>
+                            <li>Turn pricing into a marketing advantage</li>
+                            <li>Transparent pricing with no hidden costs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-chess n8n-orange text-2xl mr-3"></i>
+                            <h3 class="text-xl font-semibold">Competitive Positioning</h3>
+                        </div>
+                        <ul class="list-disc ml-6 text-lg">
+                            <li>Tailor messaging for each competitor</li>
+                            <li>Create comparison pages and content</li>
+                            <li>Highlight freedom, flexibility, future-proof</li>
+                            <li>Position as platform for next-gen makers</li>
+                            <li>Emphasize "built by and for its users"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                    <p class="text-xl">With the right features and messaging, n8n can continue to punch above its weight and capture a significant slice of the growing automation market by appealing to those who want more control and creativity.</p>
+                </div>
+            </section>
+            
+            <section id="conclusion" class="mt-5">
+                <h2>Conclusion</h2>
+                
+                <p class="text-2xl mb-8">n8n is well-positioned in the workflow automation market with unique strengths:</p>
+                
+                <div class="flex items-start mb-4">
+                    <i class="fas fa-check-circle n8n-orange text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl">Open-source, fair-code model provides flexibility and control that closed-source competitors can't match</p>
+                </div>
+                
+                <div class="flex items-start mb-4">
+                    <i class="fas fa-check-circle n8n-orange text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl">Technical focus appeals to developers and power users who find other tools too restrictive</p>
+                </div>
+                
+                <div class="flex items-start mb-4">
+                    <i class="fas fa-check-circle n8n-orange text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl">Cost-effective pricing model (per workflow, not per step) creates significant value at scale</p>
+                </div>
+                
+                <div class="flex items-start mb-4">
+                    <i class="fas fa-check-circle n8n-orange text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl">Growing community and extensibility create network effects and continuous improvement</p>
+                </div>
+                
+                <div class="card card-highlight mt-8">
+                    <h3 class="text-2xl font-semibold mb-4">Strategic Direction</h3>
+                    <p class="text-xl">To maximize growth potential, n8n should focus on:</p>
+                    <ol class="list-decimal ml-6 space-y-2 text-xl mt-4">
+                        <li>Lowering barriers for new users while maintaining power for technical users</li>
+                        <li>Expanding integration ecosystem through community marketplace</li>
+                        <li>Building enterprise-ready collaboration and governance features</li>
+                        <li>Leveraging AI capabilities as a key differentiator</li>
+                        <li>Continuing bottom-up adoption strategy with developer-first approach</li>
+                    </ol>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <p class="text-2xl font-semibold n8n-orange">Thank You</p>
+                    <p class="text-xl mt-2">Presented by: Product Management Team</p>
+                </div>
+            </section>
+            
+            <div class="slide-nav">
+                <a href="strategic-recommendations.html" class="prev"><i class="fas fa-arrow-left"></i> Strategic Recommendations</a>
+                <a href="index.html" class="next">Back to Home <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 n8n Product Teardown</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
