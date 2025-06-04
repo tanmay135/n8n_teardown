@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Overview - n8n Product Teardown</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0C22.4 0 0 22.4 0 50C0 77.6 22.4 100 50 100C77.6 100 100 77.6 100 50C100 22.4 77.6 0 50 0Z" fill="#FF6B4A"/>
+                        <path d="M65 35V65H55V50L35 65V35H45V50L65 35Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">n8n</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-overview.html">Product Overview</a></li>
+                        <li><a href="market-analysis.html">Market Analysis</a></li>
+                        <li><a href="user-insights.html">User Insights</a></li>
+                        <li><a href="strategic-recommendations.html">Strategic Recommendations</a></li>
+                        <li><a href="gtm-strategy.html">Go-to-Market</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">Product Overview</h1>
+            
+            <section id="what-is-n8n">
+                <h2>What is n8n?</h2>
+                
+                <div class="flex mb-3">
+                    <div class="w-60">
+                        <p class="text-xl mb-3">n8n is an <span class="n8n-orange font-semibold">open-source, extendable workflow automation tool</span> that follows a "fair-code" model.</p>
+                        
+                        <div class="card card-highlight">
+                            <p class="text-xl"><i class="fas fa-quote-left text-gray-400 mr-2"></i>Connect anything to everything<i class="fas fa-quote-right text-gray-400 ml-2"></i></p>
+                        </div>
+                        
+                        <p class="text-xl mt-3">It provides a node-based, low-code interface to connect different apps and APIs, making it highly versatile for automating tasks.</p>
+                    </div>
+                    
+                    <div class="w-40 flex justify-center">
+                        <div style="width: 400px; height: 300px; background-color: #f5f5f5; border-radius: 8px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                            <img src="images/n8n-workflow.png" alt="n8n workflow interface" style="width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <p class="text-xl mb-2">Users can:</p>
+                    <div class="flex mb-2">
+                        <i class="fas fa-puzzle-piece icon text-xl"></i>
+                        <p class="text-xl">Build workflows by dragging nodes (representing services or logic) on a canvas</p>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-code icon text-xl"></i>
+                        <p class="text-xl">Inject custom code (JavaScript, Python, etc.) within workflows for ultimate flexibility</p>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-server icon text-xl"></i>
+                        <p class="text-xl">Self-host with custom functions or integrations, or use n8n's cloud service</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="problem-goal" class="mt-5">
+                <h2>Problem & Goal</h2>
+                
+                <div class="card card-highlight mb-4">
+                    <h3 class="text-xl font-semibold mb-2"><i class="fas fa-exclamation-circle n8n-orange mr-2"></i>The Problem</h3>
+                    <p class="text-lg">n8n was created out of frustration with existing workflow tools that <span class="italic">"either lacked flexibility or required deep technical expertise."</span></p>
+                    <p class="text-lg mt-2">Users needed a solution that could handle complex integrations without the limitations of closed-source tools or the complexity of custom coding.</p>
+                </div>
+                
+                <div class="card card-success">
+                    <h3 class="text-xl font-semibold mb-2"><i class="fas fa-bullseye n8n-green mr-2"></i>The Goal</h3>
+                    <p class="text-lg">Build a solution <span class="italic">"powerful enough for developers yet accessible to anyone willing to learn."</span></p>
+                    <p class="text-lg mt-2">n8n aims to:</p>
+                    <ul class="list-disc ml-8 mt-2">
+                        <li class="text-lg mb-2">Give technical teams the power of custom code automation without reinventing the wheel</li>
+                        <li class="text-lg mb-2">Enable different services to talk to each other in automated pipelines</li>
+                        <li class="text-lg mb-2">Bridge the gap between simple no-code tools and full custom scripting</li>
+                        <li class="text-lg">Give technical people "the powers of a 10x developer" through automation</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section id="key-features" class="mt-5">
+                <h2>Key Features</h2>
+                
+                <div class="grid">
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-plug icon text-2xl"></i>
+                            <h3 class="text-xl font-semibold">500+ Built-in Integrations</h3>
+                        </div>
+                        <p class="text-lg">Pre-built nodes for popular services and APIs, with a visual editor to construct workflows</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-server icon text-2xl"></i>
+                            <h3 class="text-xl font-semibold">Self-hosting Option</h3>
+                        </div>
+                        <p class="text-lg">Run on your own server for data control and unlimited usage, or use n8n's cloud service</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-code icon text-2xl"></i>
+                            <h3 class="text-xl font-semibold">In-workflow Coding</h3>
+                        </div>
+                        <p class="text-lg">Add custom JavaScript, Python, or other code within workflows for ultimate flexibility</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-puzzle-piece icon text-2xl"></i>
+                            <h3 class="text-xl font-semibold">Extensibility</h3>
+                        </div>
+                        <p class="text-lg">Extend the platform with community-contributed or custom nodes</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-bolt icon text-2xl"></i>
+                            <h3 class="text-xl font-semibold">Multiple Triggers</h3>
+                        </div>
+                        <p class="text-lg">Start workflows via webhooks, timers, or triggers from integrated apps</p>
+                    </div>
+                    
+                    <div class="card card-highlight">
+                        <div class="flex mb-2">
+                            <i class="fas fa-sitemap icon text-2xl"></i>
+                            <h3 class="text-xl font-semibold">Complex Logic</h3>
+                        </div>
+                        <p class="text-lg">Handle branching logic, loops, and data transformations in a flowchart style</p>
+                    </div>
+                </div>
+                
+                <p class="text-xl mt-4 italic text-center">"n8n is a beast for automation – self-hosting and low-code make it a dev's dream"</p>
+            </section>
+            
+            <div class="slide-nav">
+                <a href="index.html" class="prev"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                <a href="market-analysis.html" class="next">Market Analysis <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 n8n Product Teardown</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
